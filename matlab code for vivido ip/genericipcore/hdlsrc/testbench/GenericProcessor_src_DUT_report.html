@@ -1,0 +1,346 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="https://www.mathworks.com/help/schema/MathWorksDocPage">
+<head>
+<title>HDL Check Report for 'testbench/DUT'</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<script type="text/javascript" src="file://C:/Matlab/toolbox/hdlcoder/hdlcommon/js_css/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="file://C:/Matlab/toolbox/hdlcoder/hdlcommon/js_css/docscripts.js"></script>
+        
+        <link href="html/pages/ice_960.css" rel="stylesheet" type="text/css">
+        <link href="html/pages/HDLsite5.css" rel="stylesheet" type="text/css">
+        <link href="html/pages/ice_doc_center.css" rel="stylesheet" type="text/css">
+        <link href="html/pages/ice_doc_center_installed.css" rel="stylesheet" type="text/css">
+        <link href="html/pages/ice_doc_center_print.css" rel="stylesheet" type="text/css" media="print">
+        <script type="text/javascript">
+            if (navigator.appName != "ICEbrowser") {
+            var cssStyleSheets = $("link").filter(function(){
+            var href = $(this).attr('href');
+            return href.indexOf("ice_doc_center_print.css") == -1});
+            var hrefElements = $.map(cssStyleSheets, function(elem) {
+            var href = $(elem).attr('href');
+            var hrefArray = href.split("/");
+            hrefArray[hrefArray.length - 1] = hrefArray[hrefArray.length - 1].replace("ice_", "");
+            return {
+            href: hrefArray.join("/"),
+            media: $(elem).attr('media')
+            };
+            });
+            cssStyleSheets.remove();
+            for (var i = 0; i < hrefElements.length; i++) {
+            if ($.browser.msie && $.browser.version <= 8) {
+            document.createStyleSheet(hrefElements[i].href);
+            } else {
+            var link = $('<link rel="stylesheet" href=' + hrefElements[i].href + ' type="text/css" />');
+            if (hrefElements[i].media) {
+            link.attr('media', hrefElements[i].media);
+            }
+            $('head').append(link);
+            }
+            }
+            }
+    </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<div class="container_192">
+<div class="grid_192">
+ <div class="page_container"><div class="content_frame">
+<h1>HDL Code Generation Check Report for 'testbench/DUT'
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'open_system(\'testbench/DUT\');'})" >open model 'testbench/DUT'</a><BR>
+Generated on 2026-10-26 20:47:50</h1>
+<H2>HDL check for 'testbench' complete with 0 errors, 36 warnings, and 4 messages.</H2><BR>
+<H3>The following table describes blocks for which errors, warnings or messages were reported.</H3><BR>
+<TABLE style="border: 2px solid; border-collapse: collapse;">
+<TR><TD style="border: 2px solid; border-collapse: collapse;"> <B>Simulink Blocks and resources</B> </TD><TD style="border: 2px solid; border-collapse: collapse;"> <B>Level</B> </TD><TD style="border: 2px solid; border-collapse: collapse;"> <B>Description</B> </TD></TR><TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:engine:ReuseRequiresInvariantConstants" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');open_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84]))'})" >testbench/DUT</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">HDL code from identical atomic subsystems can only be shared when the optimization configuration parameter 'Default parameter behavior' is set to 'Inlined'.</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 67 111 110 118 32 77 111 100 117 108 101 47 82 101 97 108 32 67 111 110 118 32 75 101 114 110 101 108 47 67 111 110 118 69 110 103 105 110 101 47 67 79 78 86 47 67 111 110 118 95 83 121 110 99 47 83 121 110 99 101 100 80 114 111 99 101 115 115 111 114 68 121 110 97 109 105 99 76 67 76 111 97 100 105 110 103 47 83 121 110 99 72 117 98 47 68 101 98 117 103 97 98 108 101 82 65 77 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 32 82 65 77 32 98 121 32 68 101 112 116 104 47 82 97 109 47 82 97 109 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109]))'})" >testbench/DUT/DUT/Conv Module/Real Conv Kernel/ConvEngine/CONV/Conv_Sync/SyncedProcessorDynamicLCLoading/SyncHub/DebugableRAM/Simple Dual Port RAM by Depth/Ram/Ram/Simple Dual Port
+RAM System</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 67 111 110 118 32 77 111 100 117 108 101 47 82 101 97 108 32 67 111 110 118 32 75 101 114 110 101 108 47 67 111 110 118 69 110 103 105 110 101 47 67 79 78 86 47 68 97 116 97 77 101 109 77 97 115 107 47 68 97 116 97 77 101 109 47 82 101 115 117 108 116 32 77 101 109 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 32 82 65 77 32 98 121 32 68 101 112 116 104 47 82 97 109 47 82 97 109 47 82 97 109 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109]))'})" >testbench/DUT/DUT/Conv Module/Real Conv Kernel/ConvEngine/CONV/DataMemMask/DataMem/Result Mem/Simple Dual Port RAM by Depth/Ram/Ram/Ram/Simple Dual Port
+RAM System</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 67 111 110 118 32 77 111 100 117 108 101 47 82 101 97 108 32 67 111 110 118 32 75 101 114 110 101 108 47 67 111 110 118 69 110 103 105 110 101 47 67 79 78 86 47 68 97 116 97 77 101 109 77 97 115 107 47 68 97 116 97 77 101 109 47 82 101 115 117 108 116 32 77 101 109 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 32 82 65 77 32 98 121 32 68 101 112 116 104 47 82 97 109 47 82 97 109 49 47 82 97 109 47 82 97 109 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109]))'})" >testbench/DUT/DUT/Conv Module/Real Conv Kernel/ConvEngine/CONV/DataMemMask/DataMem/Result Mem/Simple Dual Port RAM by Depth/Ram/Ram1/Ram/Ram/Simple Dual Port
+RAM System</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 67 111 110 118 32 77 111 100 117 108 101 47 82 101 97 108 32 67 111 110 118 32 75 101 114 110 101 108 47 67 111 110 118 69 110 103 105 110 101 47 67 79 78 86 47 68 97 116 97 77 101 109 77 97 115 107 47 68 97 116 97 77 101 109 47 82 101 115 117 108 116 32 77 101 109 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 32 82 65 77 32 98 121 32 68 101 112 116 104 47 82 97 109 47 82 97 109 49 47 82 97 109 49 47 82 97 109 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109]))'})" >testbench/DUT/DUT/Conv Module/Real Conv Kernel/ConvEngine/CONV/DataMemMask/DataMem/Result Mem/Simple Dual Port RAM by Depth/Ram/Ram1/Ram1/Ram/Simple Dual Port
+RAM System</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 67 111 110 118 32 77 111 100 117 108 101 47 82 101 97 108 32 67 111 110 118 32 75 101 114 110 101 108 47 67 111 110 118 69 110 103 105 110 101 47 67 79 78 86 47 68 97 116 97 77 101 109 77 97 115 107 47 68 97 116 97 77 101 109 47 82 101 115 117 108 116 32 77 101 109 49 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 32 82 65 77 32 98 121 32 68 101 112 116 104 47 82 97 109 47 82 97 109 47 82 97 109 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109]))'})" >testbench/DUT/DUT/Conv Module/Real Conv Kernel/ConvEngine/CONV/DataMemMask/DataMem/Result Mem1/Simple Dual Port RAM by Depth/Ram/Ram/Ram/Simple Dual Port
+RAM System</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 67 111 110 118 32 77 111 100 117 108 101 47 82 101 97 108 32 67 111 110 118 32 75 101 114 110 101 108 47 67 111 110 118 69 110 103 105 110 101 47 67 79 78 86 47 68 97 116 97 77 101 109 77 97 115 107 47 68 97 116 97 77 101 109 47 82 101 115 117 108 116 32 77 101 109 49 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 32 82 65 77 32 98 121 32 68 101 112 116 104 47 82 97 109 47 82 97 109 49 47 82 97 109 47 82 97 109 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109]))'})" >testbench/DUT/DUT/Conv Module/Real Conv Kernel/ConvEngine/CONV/DataMemMask/DataMem/Result Mem1/Simple Dual Port RAM by Depth/Ram/Ram1/Ram/Ram/Simple Dual Port
+RAM System</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 67 111 110 118 32 77 111 100 117 108 101 47 82 101 97 108 32 67 111 110 118 32 75 101 114 110 101 108 47 67 111 110 118 69 110 103 105 110 101 47 67 79 78 86 47 68 97 116 97 77 101 109 77 97 115 107 47 68 97 116 97 77 101 109 47 82 101 115 117 108 116 32 77 101 109 49 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 32 82 65 77 32 98 121 32 68 101 112 116 104 47 82 97 109 47 82 97 109 49 47 82 97 109 49 47 82 97 109 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109]))'})" >testbench/DUT/DUT/Conv Module/Real Conv Kernel/ConvEngine/CONV/DataMemMask/DataMem/Result Mem1/Simple Dual Port RAM by Depth/Ram/Ram1/Ram1/Ram/Simple Dual Port
+RAM System</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 67 111 110 118 32 77 111 100 117 108 101 47 82 101 97 108 32 67 111 110 118 32 75 101 114 110 101 108 47 67 111 110 118 69 110 103 105 110 101 47 73 110 112 117 116 80 114 111 99 101 115 115 111 114 48 95 84 47 73 80 83 121 110 99 47 83 121 110 99 101 100 80 114 111 99 101 115 115 111 114 68 121 110 97 109 105 99 76 67 76 111 97 100 105 110 103 47 83 121 110 99 72 117 98 47 68 101 98 117 103 97 98 108 101 82 65 77 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 32 82 65 77 32 98 121 32 68 101 112 116 104 47 82 97 109 47 82 97 109 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109]))'})" >testbench/DUT/DUT/Conv Module/Real Conv Kernel/ConvEngine/InputProcessor0_T/IPSync/SyncedProcessorDynamicLCLoading/SyncHub/DebugableRAM/Simple Dual Port RAM by Depth/Ram/Ram/Simple Dual Port
+RAM System</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 67 111 110 118 32 77 111 100 117 108 101 47 82 101 97 108 32 67 111 110 118 32 75 101 114 110 101 108 47 67 111 110 118 69 110 103 105 110 101 47 79 117 116 112 117 116 80 114 111 99 101 115 115 111 114 95 84 47 79 80 115 121 110 99 47 83 121 110 99 101 100 80 114 111 99 101 115 115 111 114 68 121 110 97 109 105 99 76 67 76 111 97 100 105 110 103 47 83 121 110 99 72 117 98 47 68 101 98 117 103 97 98 108 101 82 65 77 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 32 82 65 77 32 98 121 32 68 101 112 116 104 47 82 97 109 47 82 97 109 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109]))'})" >testbench/DUT/DUT/Conv Module/Real Conv Kernel/ConvEngine/OutputProcessor_T/OPsync/SyncedProcessorDynamicLCLoading/SyncHub/DebugableRAM/Simple Dual Port RAM by Depth/Ram/Ram/Simple Dual Port
+RAM System</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 70 67 32 75 101 114 110 101 108 47 82 101 97 108 32 70 67 32 75 101 114 110 101 108 47 70 67 69 110 103 105 110 101 47 70 67 68 85 84 47 70 67 85 110 105 116 47 68 97 116 97 77 101 109 83 105 110 103 108 101 67 121 99 108 101 65 99 99 117 109 117 108 97 116 111 114 47 82 101 115 117 108 116 32 77 101 109 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 32 82 65 77 32 98 121 32 68 101 112 116 104 47 82 97 109 47 82 97 109 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109]))'})" >testbench/DUT/DUT/FC Kernel/Real FC Kernel/FCEngine/FCDUT/FCUnit/DataMemSingleCycleAccumulator/Result Mem/Simple Dual Port RAM by Depth/Ram/Ram/Simple Dual Port
+RAM System</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 70 67 32 75 101 114 110 101 108 47 82 101 97 108 32 70 67 32 75 101 114 110 101 108 47 70 67 69 110 103 105 110 101 47 70 67 68 85 84 47 70 67 85 110 105 116 47 68 97 116 97 77 101 109 83 105 110 103 108 101 67 121 99 108 101 65 99 99 117 109 117 108 97 116 111 114 47 82 101 115 117 108 116 32 77 101 109 49 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 32 82 65 77 32 98 121 32 68 101 112 116 104 47 82 97 109 47 82 97 109 47 82 97 109 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109]))'})" >testbench/DUT/DUT/FC Kernel/Real FC Kernel/FCEngine/FCDUT/FCUnit/DataMemSingleCycleAccumulator/Result Mem1/Simple Dual Port RAM by Depth/Ram/Ram/Ram/Simple Dual Port
+RAM System</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 70 67 32 75 101 114 110 101 108 47 82 101 97 108 32 70 67 32 75 101 114 110 101 108 47 70 67 69 110 103 105 110 101 47 70 67 68 85 84 47 70 67 85 110 105 116 47 68 97 116 97 77 101 109 83 105 110 103 108 101 67 121 99 108 101 65 99 99 117 109 117 108 97 116 111 114 47 82 101 115 117 108 116 32 77 101 109 49 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 32 82 65 77 32 98 121 32 68 101 112 116 104 47 82 97 109 47 82 97 109 49 47 82 97 109 47 82 97 109 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109]))'})" >testbench/DUT/DUT/FC Kernel/Real FC Kernel/FCEngine/FCDUT/FCUnit/DataMemSingleCycleAccumulator/Result Mem1/Simple Dual Port RAM by Depth/Ram/Ram1/Ram/Ram/Simple Dual Port
+RAM System</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 70 67 32 75 101 114 110 101 108 47 82 101 97 108 32 70 67 32 75 101 114 110 101 108 47 70 67 69 110 103 105 110 101 47 70 67 68 85 84 47 70 67 85 110 105 116 47 68 97 116 97 77 101 109 83 105 110 103 108 101 67 121 99 108 101 65 99 99 117 109 117 108 97 116 111 114 47 82 101 115 117 108 116 32 77 101 109 49 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 32 82 65 77 32 98 121 32 68 101 112 116 104 47 82 97 109 47 82 97 109 49 47 82 97 109 49 47 82 97 109 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109]))'})" >testbench/DUT/DUT/FC Kernel/Real FC Kernel/FCEngine/FCDUT/FCUnit/DataMemSingleCycleAccumulator/Result Mem1/Simple Dual Port RAM by Depth/Ram/Ram1/Ram1/Ram/Simple Dual Port
+RAM System</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:MultiplyAddXilinxAsyncReset" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 70 67 32 75 101 114 110 101 108 47 82 101 97 108 32 70 67 32 75 101 114 110 101 108 47 70 67 69 110 103 105 110 101 47 70 67 68 85 84 47 70 67 85 110 105 116 47 77 86 77 117 108 49 47 70 67 67 111 110 116 114 111 108 108 101 114 47 77 117 108 116 105 112 108 121 45 65 100 100]))'})" >testbench/DUT/DUT/FC Kernel/Real FC Kernel/FCEngine/FCDUT/FCUnit/MVMul1/FCController/Multiply-Add</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The model has a 'ResetType' setting that is incompatible for DSP mapping in Xilinx boards. Set the 'ResetType' property to 'Synchronous' to map pipeline registers to DSP.</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcommon:nativefloatingpoint:InefficientSwitchCriteria" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 70 67 32 75 101 114 110 101 108 47 82 101 97 108 32 70 67 32 75 101 114 110 101 108 47 70 67 69 110 103 105 110 101 47 70 67 68 85 84 47 83 116 114 101 97 109 70 73 70 79 95 68 68 82 66 117 114 115 116 67 111 110 116 114 111 108 47 83 116 114 101 97 109 105 110 103 70 73 70 79 47 65 115 121 109 109 101 116 114 105 99 70 73 70 79 47 83 119 105 116 99 104]))'})" >testbench/DUT/DUT/FC Kernel/Real FC Kernel/FCEngine/FCDUT/StreamFIFO_DDRBurstControl/StreamingFIFO/AsymmetricFIFO/Switch</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Chosen switch criteria with a floating-point type is not optimal and can introduce extra latency. Select 'u2 ~= 0' criteria for the most efficient results with native floating-point code generation.</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 70 67 32 75 101 114 110 101 108 47 82 101 97 108 32 70 67 32 75 101 114 110 101 108 47 70 67 69 110 103 105 110 101 47 70 67 68 85 84 47 83 116 114 101 97 109 70 73 70 79 95 68 68 82 66 117 114 115 116 67 111 110 116 114 111 108 47 83 116 114 101 97 109 105 110 103 70 73 70 79 47 65 115 121 109 109 101 116 114 105 99 70 73 70 79 47 68 117 97 108 32 82 97 116 101 32 83 116 114 101 97 109 105 110 103 82 65 77 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 32 82 65 77 32 83 121 115 116 101 109 32 70 111 114 99 101 100 32 65 100 100 114 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109]))'})" >testbench/DUT/DUT/FC Kernel/Real FC Kernel/FCEngine/FCDUT/StreamFIFO_DDRBurstControl/StreamingFIFO/AsymmetricFIFO/Dual Rate StreamingRAM/Simple Dual Port RAM System Forced Addr/Simple Dual Port
+RAM System</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 83 99 104 101 100 117 108 101 114 47 83 99 104 101 100 117 108 101 114 47 65 100 100 95 32 73 110 115 116 114 117 99 116 105 111 110 83 116 97 99 107 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 49 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 47 73 83 116 97 99 107 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 70 73 70 79 95 68 76 95 73 78 83 84 82 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109 49]))'})" >testbench/DUT/DUT/Scheduler/Scheduler/Add_ InstructionStack/Subsystem Reference1/Subsystem Reference/IStack/StackBufferWithClr/StackBufferWithClr/FIFO_DL_INSTR/Simple Dual Port
+RAM System1</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 83 99 104 101 100 117 108 101 114 47 83 99 104 101 100 117 108 101 114 47 65 100 100 95 32 73 110 115 116 114 117 99 116 105 111 110 83 116 97 99 107 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 49 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 47 73 83 116 97 99 107 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 70 73 70 79 95 80 65 89 76 79 65 68 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109 49]))'})" >testbench/DUT/DUT/Scheduler/Scheduler/Add_ InstructionStack/Subsystem Reference1/Subsystem Reference/IStack/StackBufferWithClr/StackBufferWithClr/FIFO_PAYLOAD/Simple Dual Port
+RAM System1</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 83 99 104 101 100 117 108 101 114 47 83 99 104 101 100 117 108 101 114 47 67 111 110 118 95 73 110 115 116 114 117 99 116 105 111 110 83 116 97 99 107 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 49 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 47 73 83 116 97 99 107 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 70 73 70 79 95 68 76 95 73 78 83 84 82 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109 49]))'})" >testbench/DUT/DUT/Scheduler/Scheduler/Conv_InstructionStack/Subsystem Reference1/Subsystem Reference/IStack/StackBufferWithClr/StackBufferWithClr/FIFO_DL_INSTR/Simple Dual Port
+RAM System1</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 83 99 104 101 100 117 108 101 114 47 83 99 104 101 100 117 108 101 114 47 67 111 110 118 95 73 110 115 116 114 117 99 116 105 111 110 83 116 97 99 107 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 49 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 47 73 83 116 97 99 107 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 70 73 70 79 95 80 65 89 76 79 65 68 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109 49]))'})" >testbench/DUT/DUT/Scheduler/Scheduler/Conv_InstructionStack/Subsystem Reference1/Subsystem Reference/IStack/StackBufferWithClr/StackBufferWithClr/FIFO_PAYLOAD/Simple Dual Port
+RAM System1</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 83 99 104 101 100 117 108 101 114 47 83 99 104 101 100 117 108 101 114 47 70 67 95 73 110 115 116 114 117 99 116 105 111 110 83 116 97 99 107 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 49 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 47 73 83 116 97 99 107 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 70 73 70 79 95 68 76 95 73 78 83 84 82 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109 49]))'})" >testbench/DUT/DUT/Scheduler/Scheduler/FC_InstructionStack/Subsystem Reference1/Subsystem Reference/IStack/StackBufferWithClr/StackBufferWithClr/FIFO_DL_INSTR/Simple Dual Port
+RAM System1</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 83 99 104 101 100 117 108 101 114 47 83 99 104 101 100 117 108 101 114 47 70 67 95 73 110 115 116 114 117 99 116 105 111 110 83 116 97 99 107 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 49 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 47 73 83 116 97 99 107 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 70 73 70 79 95 80 65 89 76 79 65 68 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109 49]))'})" >testbench/DUT/DUT/Scheduler/Scheduler/FC_InstructionStack/Subsystem Reference1/Subsystem Reference/IStack/StackBufferWithClr/StackBufferWithClr/FIFO_PAYLOAD/Simple Dual Port
+RAM System1</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 83 99 104 101 100 117 108 101 114 47 83 99 104 101 100 117 108 101 114 47 73 110 112 117 116 95 73 110 115 116 114 117 99 116 105 111 110 83 116 97 99 107 32 32 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 49 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 47 73 83 116 97 99 107 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 70 73 70 79 95 68 76 95 73 78 83 84 82 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109 49]))'})" >testbench/DUT/DUT/Scheduler/Scheduler/Input_InstructionStack  /Subsystem Reference1/Subsystem Reference/IStack/StackBufferWithClr/StackBufferWithClr/FIFO_DL_INSTR/Simple Dual Port
+RAM System1</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 83 99 104 101 100 117 108 101 114 47 83 99 104 101 100 117 108 101 114 47 73 110 112 117 116 95 73 110 115 116 114 117 99 116 105 111 110 83 116 97 99 107 32 32 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 49 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 47 73 83 116 97 99 107 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 70 73 70 79 95 80 65 89 76 79 65 68 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109 49]))'})" >testbench/DUT/DUT/Scheduler/Scheduler/Input_InstructionStack  /Subsystem Reference1/Subsystem Reference/IStack/StackBufferWithClr/StackBufferWithClr/FIFO_PAYLOAD/Simple Dual Port
+RAM System1</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 83 99 104 101 100 117 108 101 114 47 83 99 104 101 100 117 108 101 114 47 78 111 79 112 95 32 73 110 115 116 114 117 99 116 105 111 110 83 116 97 99 107 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 49 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 47 73 83 116 97 99 107 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 70 73 70 79 95 68 76 95 73 78 83 84 82 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109 49]))'})" >testbench/DUT/DUT/Scheduler/Scheduler/NoOp_ InstructionStack/Subsystem Reference1/Subsystem Reference/IStack/StackBufferWithClr/StackBufferWithClr/FIFO_DL_INSTR/Simple Dual Port
+RAM System1</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 83 99 104 101 100 117 108 101 114 47 83 99 104 101 100 117 108 101 114 47 78 111 79 112 95 32 73 110 115 116 114 117 99 116 105 111 110 83 116 97 99 107 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 49 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 47 73 83 116 97 99 107 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 70 73 70 79 95 80 65 89 76 79 65 68 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109 49]))'})" >testbench/DUT/DUT/Scheduler/Scheduler/NoOp_ InstructionStack/Subsystem Reference1/Subsystem Reference/IStack/StackBufferWithClr/StackBufferWithClr/FIFO_PAYLOAD/Simple Dual Port
+RAM System1</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 83 99 104 101 100 117 108 101 114 47 83 99 104 101 100 117 108 101 114 47 79 117 116 112 117 116 95 73 110 115 116 114 117 99 116 105 111 110 83 116 97 99 107 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 49 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 47 73 83 116 97 99 107 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 70 73 70 79 95 68 76 95 73 78 83 84 82 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109 49]))'})" >testbench/DUT/DUT/Scheduler/Scheduler/Output_InstructionStack/Subsystem Reference1/Subsystem Reference/IStack/StackBufferWithClr/StackBufferWithClr/FIFO_DL_INSTR/Simple Dual Port
+RAM System1</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 83 99 104 101 100 117 108 101 114 47 83 99 104 101 100 117 108 101 114 47 79 117 116 112 117 116 95 73 110 115 116 114 117 99 116 105 111 110 83 116 97 99 107 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 49 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 47 73 83 116 97 99 107 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 83 116 97 99 107 66 117 102 102 101 114 87 105 116 104 67 108 114 47 70 73 70 79 95 80 65 89 76 79 65 68 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109 49]))'})" >testbench/DUT/DUT/Scheduler/Scheduler/Output_InstructionStack/Subsystem Reference1/Subsystem Reference/IStack/StackBufferWithClr/StackBufferWithClr/FIFO_PAYLOAD/Simple Dual Port
+RAM System1</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 83 99 104 101 100 117 108 101 114 47 83 99 104 101 100 117 108 101 114 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 50 47 84 97 98 108 101 69 110 116 114 105 101 115 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109]))'})" >testbench/DUT/DUT/Scheduler/Scheduler/Subsystem Reference2/TableEntries/Simple Dual Port
+RAM System</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 83 117 98 115 121 115 116 101 109 47 67 78 78 53 95 100 101 98 117 103 49 47 68 101 98 117 103 32 76 111 103 32 77 115 103 47 68 101 98 117 103 32 77 101 109 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 32 82 65 77 32 98 121 32 68 101 112 116 104 47 82 97 109 47 82 97 109 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109]))'})" >testbench/DUT/DUT/Subsystem/CNN5_debug1/Debug Log Msg/Debug Mem/Simple Dual Port RAM by Depth/Ram/Ram/Simple Dual Port
+RAM System</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:RAMInitMismatch" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 83 117 98 115 121 115 116 101 109 47 67 78 78 53 95 100 101 98 117 103 49 47 68 101 98 117 103 32 76 111 103 32 84 83 47 68 101 98 117 103 32 77 101 109 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 32 82 65 77 32 98 121 32 68 101 112 116 104 47 82 97 109 47 82 97 109 47 83 105 109 112 108 101 32 68 117 97 108 32 80 111 114 116 10 82 65 77 32 83 121 115 116 101 109]))'})" >testbench/DUT/DUT/Subsystem/CNN5_debug1/Debug Log TS/Debug Mem/Simple Dual Port RAM by Depth/Ram/Ram/Simple Dual Port
+RAM System</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The "Initialize all RAM blocks" setting in the HDL Code Generation options is unselected. This can cause HDL simulation mismatches on running the generated HDL testbench</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:makehdl:genericfamilynotcharacterized" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');open_system(char([116 101 115 116 98 101 110 99 104]))'})" >testbench</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Family Zynq UltraScale+ not characterized. Using default value, SynthesisToolChipFamily=virtex7 and SynthesisToolSpeedValue=-1, for adaptive pipelining.</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:optimization:AdaptivePipeliningOptIgnored" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 70 67 32 75 101 114 110 101 108 47 82 101 97 108 32 70 67 32 75 101 114 110 101 108 47 70 67 69 110 103 105 110 101 47 70 67 68 85 84 47 70 67 85 110 105 116 47 77 86 77 117 108 49 47 70 67 67 111 110 116 114 111 108 108 101 114 47 77 117 108 116 105 112 108 121 45 65 100 100]))'})" >testbench/DUT/DUT/FC Kernel/Real FC Kernel/FCEngine/FCDUT/FCUnit/MVMul1/FCController/Multiply-Add</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The adaptive pipelining setting is disabled, but the block 'testbench/DUT/DUT/FC Kernel/Real FC Kernel/FCEngine/FCDUT/FCUnit/MVMul1/FCController/Multiply-Add' introduced adaptive pipelines. The chosen settings for this block ignore the adaptive pipelining setting. <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'helpview(fullfile(docroot, \'hdlcoder\', \'helptargets.map\'),\'msg_madd_adaptive_pipelining\')'})" >More information</a></TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:matlabhdlcoder:MatrixTypesBadVarDims" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84]))'})" >testbench/DUT</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">HDL Coder does not generate matrix types for matrices with more than 2-dimensions. Variable, 'validTemp', is a 4-dimensional matrix. As a result, matrices are flattened in this module.</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:engine:optimizationrequestdisabled" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');open_system(char([116 101 115 116 98 101 110 99 104]))'})" >testbench</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Unable to insert requested pipelines for some blocks because they are in a feedback loop that does not have enough latency budget. Consider increasing the latency budget by adding more design delays in the feedback loop or using clock-rate pipelining. Refer to the <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hdlcoder.report.openDdg(\'file:///C:/Users/admin/Desktop/genericipcore/hdlsrc/testbench/html/pages/testbench_delay_balancing.html\')'})" >delay balancing report</a> for more details.</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:nonvirtualBus" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 65 100 100 101 114 32 77 111 100 117 108 101 47 82 101 97 108 32 65 100 100 101 114 32 75 101 114 110 101 108 47 65 100 100 32 69 110 103 105 110 101 47 65 100 100 101 114 32 76 67 47 84 111 73 110 115 116 114 117 99 116 105 111 110 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 55 47 84 121 112 101 67 104 97 110 103 101 47 66 117 115 50]))'})" >testbench/DUT/DUT/Adder Module/Real Adder Kernel/Add Engine/Adder LC/ToInstruction/Subsystem Reference7/TypeChange/Bus2</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Message</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The non-virtual bus setting is ignored for HDL code generation. The bus will be implemented as a set of independent elements.</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:nonvirtualBus" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 70 67 32 75 101 114 110 101 108 47 82 101 97 108 32 70 67 32 75 101 114 110 101 108 47 70 67 69 110 103 105 110 101 47 76 67 70 67 47 84 111 73 110 115 116 114 117 99 116 105 111 110 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 55 47 84 121 112 101 67 104 97 110 103 101 47 66 117 115 50]))'})" >testbench/DUT/DUT/FC Kernel/Real FC Kernel/FCEngine/LCFC/ToInstruction/Subsystem Reference7/TypeChange/Bus2</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Message</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The non-virtual bus setting is ignored for HDL code generation. The bus will be implemented as a set of independent elements.</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:validate:nonvirtualBus" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');hilite_system(char([116 101 115 116 98 101 110 99 104 47 68 85 84 47 68 85 84 47 83 99 104 101 100 117 108 101 114 47 66 117 115 10 67 114 101 97 116 111 114]))'})" >testbench/DUT/DUT/Scheduler/Bus
+Creator</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Message</TD>
+<TD style="border: 2px solid; border-collapse: collapse">The non-virtual bus setting is ignored for HDL code generation. The bus will be implemented as a set of independent elements.</TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:hdldisp:GeneratingDCEHighlightingScript" href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'hilite(get_param(char([116 101 115 116 98 101 110 99 104]),\'object\'),\'none\');open_system(char([116 101 115 116 98 101 110 99 104]))'})" >testbench</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Message</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Unused logic removed during HDL code generation. To highlight the logic removed, click the following MATLAB script: <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'run(\'genericipcore\\hdlsrc\\testbench\\highlightRemovedDeadBlocks.m\')'})" >highlightRemovedDeadBlocks.m</a></TD>
+</TR>
+</TABLE>
+<BR><BR> </div></div></div></div>
+                    <div class="grid_192">
+                        <div class="footer_container">
+                            <div class="footer">
+                                
+                                <div class="copyright">&copy; 1994-2026 The MathWorks, Inc.</div>
+                            </div>
+                        </div>
+                    </div>
+
+        <script type="text/javascript">
+
+$(document).ready( setTimeout( function () {
+                   $(".expandAllLink").trigger('click');
+            }, 50 ) );
+
+        </script>
+        
+<script>function postParentWindowMessage(message) {window.parent.postMessage(message, "*");}</script>
+</body>
+</html>
