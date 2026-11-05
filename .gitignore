@@ -1,0 +1,14 @@
+# Generated HDL Coder / Vivado projects and logs (do not commit)
+hdl_prj/
+vivado_2023_2_prj/
+myproj/
+*.jou
+*.log
+*.str
+*.pb
+*.bit
+*.xpr
+*.xsa
+*.2024_1.bak
+*.bak
+__pycache__/
